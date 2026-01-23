@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/stransportation/css/style.css">
+    <link rel="stylesheet" href="/stransportation/css/contact.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="logo-text">Transit<span>Flow</span></div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="mobile-toggle" class="mobile-toggle-checkbox">
+            <label for="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#strategy" class="nav-link">Strategy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/stransportation/pages/contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Page Banner -->
+    <section class="contact-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p> Sorlar Street(371) ផ្លូវ​ សឡា <br>ភ្នំពេញ,</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+ (855) 123-4567<br>Mon - Fri, 9AM - 6PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>support@transitflow.com<br>info@transitflow.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+(855) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message here..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <button class="btn btn-primary btn-large">CAMBODIA</button>
+            <div class="contact-icons">
+                <a href="#" class="icon-item" id="phone-icon" title="Phone">
+                    <span class="icon">📱</span>
+                    <p>Phone</p>
+                </a>
+                <a href="https://t.me/yourusername" class="icon-item" title="Telegram">
+                    <span class="icon">📞</span>
+                    <p>Telegram</p>
+                </a>
+                <a href="https://facebook.com" class="icon-item" title="Facebook">
+                    <span class="icon">Ⓜ️</span>
+                    <p>Facebook</p>
+                </a>
+                <a href="https://mail.google.com" target="_blank" class="icon-item" title="Email">
+                    <span class="icon">✉️</span>
+                    <p>Email</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phone Service Modal -->
+    <div id="phoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Mobile Service Providers in Cambodia</h2>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <img src="https://play-lh.googleusercontent.com/MBVY5PdixeXkomZJFWSYoV7Bk4V55OiaG9_GtxZnZKDUBn_cB8ZRL0ht8U9PK16re9M"
+                        alt="Smart" class="provider-logo">
+                    <h3>Smart</h3>
+                    <p class="provider-code">(+855) 096 631 515 0</p>
+                    <a href="tel:(+855) 0966315150" class="provider-btn">Call</a>
+                </div>
+                <div class="provider-card">
+                    <img src="https://cambodiaservice.com/wp-content/uploads/classified-listing/2025/04/54018117_1210413112454109_3318605158128025600_n.png"
+                        alt="Metfone" class="provider-logo">
+                    <h3>Metfone</h3>
+                    <p class="provider-code">(+855) 012 223 371</p>
+                    <a href="tel:(+855) 012223371" class="provider-btn">Call</a>
+                </div>
+                <div class="provider-card">
+                    <img src="https://play-lh.googleusercontent.com/0lI9eGCAz4ew6wASchcrbn1jmYHb8P9cFqWkPADioPf-3OgCAqZQYkxC0jJTidgfaQ"
+                        alt="Cellcard" class="provider-logo">
+                    <h3>Cellcard</h3>
+                    <p class="provider-code">(+855) 099 933 035</p>
+                    <a href="tel:(+855) 099933035" class="provider-btn">Call</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us On The Map</h2>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6488319156607!2d104.92488732346916!3d11.556056988687898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310954d9e4f4c0b9%3A0x123456789!2sSorlar%20Street%20371%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1234567890123"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="logo-text">Transit<span>Flow</span></div>
+                </a>
+                <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7);">Smart transportation solutions for modern
+                    cities.</p>
+                <div class="social-links">
+                    <a href="#https://www.facebook.com/" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#https://github.com" class="social-icon" aria-label="Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#https://www.youtube.com/" class="social-icon" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#https://www.linkedin.com/" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#stragy">Strategy</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0.5rem;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Sangkat Tek Thla, Khan
+                    <Ri:viewport>ussey Keo, Phnom Penh</Ri:viewport>
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0.5rem;">
+                    <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> (+855) 81 906 064
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.7);">
+                    <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> Transitflow@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 TransitFlow. All rights reserved. | Designed for modern transportation solutions.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Phone Modal functionality
+        const phoneIcon = document.getElementById('phone-icon');
+        const phoneModal = document.getElementById('phoneModal');
+        const closeBtn = document.querySelector('.close');
+
+        phoneIcon.addEventListener('click', function (e) {
+            e.preventDefault();
+            phoneModal.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', function () {
+            phoneModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function (e) {
+            if (e.target === phoneModal) {
+                phoneModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
