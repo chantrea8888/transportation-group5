@@ -147,6 +147,109 @@
             background-color: transparent;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            
+        }
+
+        .main_card{
+            display: flex;
+            gap: 20px;
+        }
+        .card{
+            height: 26vh;
+            width: 25%;
+            background-color: turquoise;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .card .fas{
+            height: 60px;
+            width: 34%;
+            border-radius: 30px;
+            background-color: #0cca5b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card h4{
+            font-weight: normal;
+            font-weight: 700;
+        }
+
+        .card span{
+           display: flex;
+           text-align: justify;
+        }
+
+         .card-info{
+            height: 26vh;
+            width: 25%;
+            background-color: darkorange;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .card-info .fas{
+            height: 60px;
+            width: 34%;
+            border-radius: 30px;
+            background-color: white;
+            color: darkorange;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-info span{
+            display: flex;
+           text-align: justify;
+        }
+
+        .card-informa{
+            height: 26vh;
+            width: 25%;
+            background-color: darkcyan;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .card-informa .fas{
+            height: 60px;
+            width: 34%;
+            border-radius: 30px;
+            background-color: #27ae60;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-informa{
+           display: flex;
+           text-align: justify;
         }
 
         /* Section Styling */
