@@ -182,7 +182,7 @@ section {
     font-size: 1.05rem;
     padding: 0.5rem 0;
     transition: var(--transition);
-}
+}   
 
 .nav-link:hover,
 .nav-link:focus,
