@@ -1,10 +1,12 @@
 /* Contact Banner */
 .contact-banner {
-    background: linear-gradient(135deg, rgba(0, 210, 211, 0.9), rgba(9, 132, 227, 0.9));
-    padding: 80px 20px;
+   background: linear-gradient(rgba(23, 96, 205, 0.59), rgba(8, 161, 128, 0.552)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
     color: white;
     text-align: center;
-    border-radius: 0px 0px 40px 40px;
+    /* border-radius: 0px 0px 40px 40px; */
 }
 
 .contact-banner h1 {
@@ -14,6 +16,7 @@
 }
 
 .contact-banner p {
+    color: #ffffff;
     font-size: 18px;
     opacity: 0.9;
 }
@@ -62,11 +65,11 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #333;
+    color: #494949;
 }
 
 .info-content p {
-    color: #666;
+    color: #424242;
     line-height: 1.6;
     font-size: 14px;
 }
@@ -161,8 +164,10 @@
 /* CTA Section */
 .cta-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #1e7bc4 0%, #0d5a9e 50%, #17a697 100%);
-    text-align: center;
+    background: linear-gradient(rgba(2, 11, 24, 0.601), rgba(0, 5, 4, 0.734)), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/02/67/d3/caption.jpg?w=1200&h=-1&s=1');
+    background-size: cover;
+    background-position: center;
+    color: rgb(147, 147, 147);
 }
 
 .cta-section .container {
@@ -210,6 +215,7 @@
 }
 
 .icon-item p {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
 }
