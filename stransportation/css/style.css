@@ -1,5 +1,5 @@
 /* ===== CSS RESET & BASE STYLES ===== */
-* {
+* body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -121,6 +121,7 @@ section {
     top: 0;
     z-index: 1000;
     transition: var(--transition);
+    /* background: #000; */
 }
 
 .navbar.scrolled {
@@ -182,7 +183,7 @@ section {
     font-size: 1.05rem;
     padding: 0.5rem 0;
     transition: var(--transition);
-}
+}   
 
 .nav-link:hover,
 .nav-link:focus,
@@ -552,7 +553,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 375px) {
     section {
         padding: 3rem 0;
     }
@@ -583,12 +584,7 @@ footer {
 /* Handle navbar scroll effect with CSS only */
 .navbar {
     transition: all 0.3s ease;
-}
 
-/* This would normally be done with JS, but we'll simulate the effect */
-body {
-    padding-top: 80px;
-    /* Offset for fixed navbar */
 }
 
 /* Active link highlighting on scroll (simulated with focus) */
@@ -598,4 +594,9 @@ body {
 
 .nav-link:focus::after {
     width: 100%;
+}
+
+.tab-content{
+    width: auto;
+
 }
