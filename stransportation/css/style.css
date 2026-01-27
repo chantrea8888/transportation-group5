@@ -119,7 +119,7 @@ section {
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 900;
     transition: var(--transition);
 }
 
