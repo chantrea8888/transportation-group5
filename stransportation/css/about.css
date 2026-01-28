@@ -52,8 +52,7 @@ body {
 .goal-card h3 { color: var(--primary-blue); margin-bottom: 15px; }
 
 /* Transport Types Grid */
-.section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; }
-
+.transport-types > h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-blue); }
 .type-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -157,4 +156,16 @@ body {
 
 .detail-box:hover {
     border-left: 8px solid var(--primary-blue); /* Makes the accent line thicker on hover */
+}
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-blue), var(--accent-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 2rem;
 }
