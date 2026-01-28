@@ -11,23 +11,6 @@ body {
   
 }
 
-nav {
-  background: white;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  color: rgb(40, 15, 89);
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 .hero {
   display: flex;
   justify-content: space-between;
@@ -281,18 +264,23 @@ ul {
   padding: 0;
 }
 
-ul li {
-  background: #d4d6d6;
-  border-left: 20px solid #00a9b8;
-  padding: 10px 14px;
-  margin-bottom: 8px;
-  font-size: 17px;
-  color: #222;
+.P{
+  height: 40px;
+  width: 50%;
   border-radius: 8px;
-  max-width: 800px;
-  margin-left: 90px;
-  
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background: #d4d6d6;
+  border-left: 10px solid #00a9b8;
 }
+
+.P strong{
+  margin-left: 20px;
+}
+
+
 .contact {
   list-style: none;
   padding: 0;

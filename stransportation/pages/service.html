@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <title>Transportation Services</title>
     <link rel="stylesheet" href="/stransportation/css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="services.html">Services</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+    <!-- <nav>
+        <a href="../index.html">Home</a> 
+        <a href="../pages/stategy.html">stategy</a> 
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/service.html">Service</a>
+        <a href="../pages/contact.html">Contact</a>
+    </nav> -->
+     <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="logo-text">Transit<span>Flow</span></div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <!-- <input type="checkbox" id="mobile-toggle" class="mobile-toggle-checkbox"> -->
+            <label for="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./stategy.html" class="nav-link">Strategy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./service.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/stransportation/pages/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
     <section class="hero">
         <div class="hero-text">
             <h1>Our Transportation Services</h1>
@@ -90,11 +130,11 @@
     Our transportation service is built with customers in mind. Here’s what makes us different:
   </p>
   <ul class="reasons">
-    <li><strong>On-time service</strong> — we value punctuality</li>
-    <li><strong>Safe transport</strong> — experienced drivers and careful handling</li>
-    <li><strong>Affordable pricing</strong> — fair and transparent</li>
-    <li><strong>Friendly support</strong> — ready to assist with bookings</li>
-    <li><strong>Flexible options</strong> — suited for both individuals and businesses</li>
+    <li class="P"><strong>On-time service</strong> — we value punctuality</li>
+    <li class="P"><strong>Safe transport</strong> — experienced drivers and careful handling</li>
+    <li class="P"><strong>Affordable pricing</strong> — fair and transparent</li>
+    <li class="P"><strong>Friendly support</strong> — ready to assist with bookings</li>
+    <li class="P"><strong>Flexible options</strong> — suited for both individuals and businesses</li>
   </ul>
 </section>
 <section class="booking">
@@ -108,8 +148,64 @@
     <li>Social platforms (e.g., Facebook Page)</li>
   </ul>
 </section> 
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Contact us: transport@example.com</p>  
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="logo-text">Transit<span>Flow</span></div>
+                </a>
+                <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7);">Smart transportation solutions for modern
+                    cities.</p>
+                <div class="social-links">
+                    <a href="#https://www.facebook.com/" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#https://github.com" class="social-icon" aria-label="Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#https://www.youtube.com/" class="social-icon" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#https://www.linkedin.com/" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/stransportation/pages/stategy.html">Strategy</a></li>
+                    <li><a href="/stransportation/pages/service.html">Services</a></li>
+                    <li><a href="/stransportation/pages/about.html">About Us</a></li>
+                    <li><a href="/stransportation/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0.5rem;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Sangkat Tek Thla, Khan
+                    <Ri:viewport>ussey Keo, Phnom Penh</Ri:viewport>
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0.5rem;">
+                    <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> (+855) 81 906 064
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.7);">
+                    <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> Transitflow@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 TransitFlow. All rights reserved. | Designed for modern transportation solutions.</p>
+        </div>
+    </footer> 
 </body>
 
 </html>
