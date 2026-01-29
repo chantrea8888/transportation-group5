@@ -1,10 +1,119 @@
+
+.navbar {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    transition: var(--transition);
+    /* background: #000; */
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+.logo-text span {
+    color: var(--primary-blue);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}   
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: var(--primary-blue);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: var(--primary-blue);
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile menu toggle */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+    cursor: pointer;
+    z-index: 1001;
+}
+
 /* Contact Banner */
 .contact-banner {
-    background: linear-gradient(135deg, rgba(0, 210, 211, 0.9), rgba(9, 132, 227, 0.9));
-    padding: 80px 20px;
+    background: linear-gradient(rgba(26, 95, 206, 0.85), rgba(24, 183, 152, 0.8)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
     color: white;
     text-align: center;
-    border-radius: 0px 0px 40px 40px;
+    /* border-radius: 0px 0px 40px 40px; */
 }
 
 .contact-banner h1 {
@@ -14,6 +123,7 @@
 }
 
 .contact-banner p {
+    color: #ffffff;
     font-size: 18px;
     opacity: 0.9;
     color: white;
@@ -63,11 +173,11 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #333;
+    color: #494949;
 }
 
 .info-content p {
-    color: #666;
+    color: #424242;
     line-height: 1.6;
     font-size: 14px;
 }
@@ -126,44 +236,56 @@
 }
 
 /* Footer */
-.footer {
-    background: #1e3a5f;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+ footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 4rem 0 2rem;
 }
 
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-.footer p {
-    margin-bottom: 15px;
+.footer-logo .logo-text {
+    color: var(--white);
 }
 
-.social-links {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
-.social-link {
-    color: #17d4a3;
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
-.social-link:hover {
-    color: white;
+.footer-links a:hover {
+    color: var(--accent-green);
+    padding-left: 5px;
 }
+
 
 /* CTA Section */
 .cta-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #1e7bc4 0%, #0d5a9e 50%, #17a697 100%);
-    text-align: center;
+    background: linear-gradient(rgba(2, 11, 24, 0.601), rgba(0, 5, 4, 0.734)), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/02/67/d3/caption.jpg?w=1200&h=-1&s=1');
+    background-size: cover;
+    background-position: center;
+    color: rgb(147, 147, 147);
 }
 
 .cta-section .container {
@@ -211,6 +333,7 @@
 }
 
 .icon-item p {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
 }
