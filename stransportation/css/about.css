@@ -14,10 +14,12 @@ body {
     margin: 0;
 }
 
+
 /* Hero Style */
 .about-hero {
     height: 350px;
-    background: var(--gradient), url('transport-image.jpg'); /* Ensure path is correct */
+
+    background: linear-gradient(rgba(26, 95, 206, 0.85), rgba(24, 183, 152, 0.8)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -52,8 +54,7 @@ body {
 .goal-card h3 { color: var(--primary-blue); margin-bottom: 15px; }
 
 /* Transport Types Grid */
-.section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; }
-
+.transport-types > h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-blue); }
 .type-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -157,4 +158,16 @@ body {
 
 .detail-box:hover {
     border-left: 8px solid var(--primary-blue); /* Makes the accent line thicker on hover */
+}
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-blue), var(--accent-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 2rem;
 }
